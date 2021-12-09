@@ -1,0 +1,51 @@
+.total-container-todo{
+    height: 100%;
+    width: 100%;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container-img img{
+    height: 170px;
+}
+
+.container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container-input input{
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.container-input button{
+    margin: 0 10px;
+}
+
+.container-todo{
+    background-color: lightgray;
+    min-height: 40px;
+}
+
+.container-todo ul{
+    list-style-type: none;
+    padding: 5px 10px;
+}
+
+.container-todo li{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.done{
+    text-decoration: line-through;
+}
