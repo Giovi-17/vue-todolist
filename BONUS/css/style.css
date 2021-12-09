@@ -46,6 +46,10 @@
     font-size: 20px;
 }
 
+.container-todo i{
+    cursor: pointer;
+}
+
 .done{
     text-decoration: line-through;
 }

@@ -74,6 +74,18 @@ const app = new Vue(
 
                 }
 
+            },
+
+            addRemoveDone: function(index){
+                
+                if(this.todo[index].done){
+
+                    this.todo[index].done = false;
+
+                }else{
+                    this.todo[index].done = true;
+                }
+
             }
 
         }

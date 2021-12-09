@@ -45,7 +45,7 @@
 
                                 <li class="d-flex justify-content-between" :class="{ done: todo[index].done }" v-for="(item, index) in todo" >
 
-                                    <div>{{ todo[index].text }}</div>
+                                    <div @click="addRemoveDone(index)">{{ todo[index].text }}</div>
 
                                     <div @click="removeTodo(index)" ><i class="fas fa-dumpster-fire"></i></div>
 
