@@ -12,6 +12,50 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div id="root">
+
+        <div class="container-fluid">
+
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="col-7">
+
+                    <div class="total-container-todo">
+
+                        <div class="container-img">
+
+                            <img src="https://www.psicologionline.net/uploads/article/cover/liste-obiettivi-psicologia20190302111019.jpg" alt="">
+
+                        </div>
+
+                        <div class="container-input">
+
+                            <input type="text" name="" id="" placeholder="todo">
+
+                            <button type="button" class="btn btn-dark">ADD</button>
+
+                        </div>
+
+                        <div class="container-todo">
+
+                            <ul>
+
+                                <li :class="{ done: todo[index].done }" v-for="(item, index) in todo" >{{ todo[index].text }}</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
     
     <script src="js/script.js"></script>
 </body>

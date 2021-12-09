@@ -12,3 +12,39 @@ Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 */
 
 Vue.config.devtools = true;
+
+const app = new Vue(
+
+    {
+        el: "#root",
+        data: {
+
+            todo:[
+
+                {
+                    text: "Andare al supermercato",
+                    done: false
+                },
+
+                {
+                    text: "Andare dal barbiere",
+                    done: true
+                },
+
+                {
+                    text: "Portare a spasso il cane",
+                    done: false
+                },
+
+                {
+                    text: "Svaligiare una banca",
+                    done: false
+                },
+
+            ]
+
+        },
+        methods: {}
+    }
+
+);
