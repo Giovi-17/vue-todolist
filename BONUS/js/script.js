@@ -25,6 +25,7 @@ const app = new Vue(
         data: {
 
             textInputTodo: "",
+            arrayTodoZero: false,
 
             todo:[
 
@@ -55,13 +56,25 @@ const app = new Vue(
 
             removeTodo: function(index){
 
-                this.todo.splice(index, 1);
+                if(this.todo.length - 1 > 0){
+
+                    console.log(this.todo.length - 1);
+                    this.todo.splice(index, 1);
+
+                }else{
+
+                    this.todo.splice(index, 1);
+                    this.arrayTodoZero = true;
+
+                }
 
             },
 
             addTodo: function(textInputTodo){
 
                 if(this.textInputTodo.trim().length > 2){
+
+                    this.arrayTodoZero = false;
 
                     this.todo.push({
 
